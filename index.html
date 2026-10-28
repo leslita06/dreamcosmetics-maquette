@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dream Cosmetics · Abidjan</title>
+<meta name="description" content="Dream Cosmetics, fabricant de cosmétiques à Abidjan : Day by Day, Paw Paw, Cocopulp, Dermaskin, Biolight, Clear Therapy, Babymed et les parfums Dreamy, Sign, Slam, I Love.">
+<link rel="icon" href="assets/symbole.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--rouge:#AE172A;--rose:#FF8087;--rose-pale:#FFEDEE;--creme:#FFF8F6;--encre:#2B1B1F;--gris:#6E6266;--ligne:#F1DCDD;--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--encre);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+svg{width:1em;height:1em}
+h1,h2,h3,.titre{font-family:'Montserrat',sans-serif;letter-spacing:-.01em}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.maquette{background:var(--encre);color:#fff;font-size:12px;text-align:center;padding:6px 12px;letter-spacing:.02em}
+/* en-tête */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--ligne)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav .logo img{height:42px;width:auto}
+.nav ul{display:flex;gap:30px;list-style:none;font-family:'Montserrat';font-weight:500;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+.nav ul a{padding:6px 0;border-bottom:2px solid transparent;transition:.2s}
+.nav ul a:hover{border-color:var(--rose);color:var(--rouge)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--rouge);color:#fff;font-family:'Montserrat';font-weight:600;font-size:14px;letter-spacing:.03em;padding:14px 24px;border-radius:999px;transition:.2s;border:0;cursor:pointer}
+.btn:hover{background:#8f1022;transform:translateY(-1px)}
+.btn.clair{background:#fff;color:var(--rouge)}
+.btn.ligne{background:transparent;border:1.5px solid currentColor;color:var(--rouge)}
+.btn svg{width:18px;height:18px}
+.burger{display:none;background:none;border:0;font-size:28px;color:var(--encre);cursor:pointer}
+/* héros */
+.hero{position:relative;background:var(--creme);overflow:hidden}
+.hero-img{position:absolute;top:0;bottom:0;right:0;width:56%}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,248,246,1) 0%,rgba(255,248,246,0) 25%)}
+.hero-in{position:relative;min-height:600px;display:flex;flex-direction:column;justify-content:center;padding:80px 0;max-width:520px}
+.sur{display:inline-flex;align-items:center;gap:8px;font-family:'Montserrat';font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rouge);margin-bottom:18px}
+.sur::before{content:"";width:28px;height:2px;background:var(--rose)}
+.hero h1{font-size:clamp(38px,5vw,64px);font-weight:300;line-height:1.02;color:var(--encre)}
+.hero h1 b{font-weight:700;color:var(--rouge);display:block}
+.hero p.lead{font-size:19px;color:var(--gris);margin:22px 0 32px;max-width:440px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.ruban{background:var(--rouge);color:#fff;overflow:hidden;white-space:nowrap;font-family:'Montserrat';font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:14px;padding:16px 0}
+.ruban span{display:inline-block;animation:defile 38s linear infinite;padding-left:100%}
+@keyframes defile{to{transform:translateX(-100%)}}
+/* sections */
+section{padding:96px 0}
+.tete{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.tete h2{font-size:clamp(30px,4vw,46px);font-weight:300;line-height:1.1}
+.tete h2 b{font-weight:700;color:var(--rouge)}
+.tete p{color:var(--gris);max-width:460px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-family:'Montserrat';font-weight:500;font-size:13px;padding:9px 16px;border-radius:999px;border:1.5px solid var(--ligne);background:#fff;color:var(--encre);cursor:pointer;transition:.2s}
+.chip.on,.chip:hover{background:var(--rouge);border-color:var(--rouge);color:#fff}
+/* marques */
+.grille-m{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.marque{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--ligne);transition:.25s;display:flex;flex-direction:column}
+.marque:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(174,23,42,.35)}
+.m-img{aspect-ratio:4/5;overflow:hidden;background:var(--creme)}
+.m-img img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.marque:hover .m-img img{transform:scale(1.04)}
+.m-txt{padding:18px 20px 22px}
+.m-txt h3{font-size:19px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.acc{color:var(--rouge);font-weight:500;margin-top:4px}
+.ligne{color:var(--gris);font-size:14px;margin-top:6px}
+.marque.cache,.prod.cache{display:none}
+/* produits */
+.produits{background:var(--creme)}
+.grille-p{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.prod{background:#fff;border-radius:var(--r);padding:18px 16px 20px;text-align:center;transition:.25s}
+.prod:hover{box-shadow:0 18px 40px -20px rgba(43,27,31,.35);transform:translateY(-3px)}
+.p-img{height:190px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:radial-gradient(circle at 50% 70%,var(--rose-pale) 0 55%,transparent 56%)}
+.p-img img{max-height:180px;width:auto;object-fit:contain}
+.p-marque{font-family:'Montserrat';font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rouge)}
+.prod h3{font-family:'DM Sans';font-size:15px;font-weight:500;margin-top:4px;line-height:1.35}
+/* familles */
+.familles{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.fam{display:flex;gap:14px;align-items:center;padding:18px;border-radius:18px;background:#fff;border:1px solid var(--ligne)}
+.fam i{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--rose-pale);color:var(--rouge);font-size:24px;flex:none}
+.fam b{font-family:'Montserrat';font-size:15px;display:block}
+.fam span{font-size:13px;color:var(--gris)}
+/* où acheter */
+.grille-a{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.achat{border-radius:var(--r);padding:30px;border:1px solid var(--ligne);display:flex;flex-direction:column;gap:12px;background:#fff}
+.achat i{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:var(--rouge);color:#fff;font-size:26px}
+.achat h3{font-size:20px;font-weight:600}
+.achat p{color:var(--gris);font-size:15px;flex:1}
+.achat a.lien{display:inline-flex;align-items:center;gap:8px;color:var(--rouge);font-weight:700;font-family:'Montserrat';font-size:14px}
+.achat.vide{background:var(--rose-pale);border-style:dashed;border-color:var(--rose)}
+.achat.vide i{background:var(--rose)}
+/* bannières gammes */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.bandeau{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:2533/733}
+.bandeau img{width:100%;height:100%;object-fit:cover}
+/* contact */
+.contact{background:var(--rouge);color:#fff;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:var(--rose);opacity:.25}
+.contact .in{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(30px,4vw,46px);font-weight:300;line-height:1.1}
+.contact h2 b{font-weight:700}
+.contact .co{margin-top:28px;display:grid;gap:16px}
+.contact .co a,.contact .co div{display:flex;gap:14px;align-items:center;font-size:17px}
+.contact .co i{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.14);font-size:20px;flex:none}
+form{background:#fff;color:var(--encre);border-radius:var(--r);padding:30px;display:grid;gap:14px}
+form label{font-size:13px;font-weight:700;font-family:'Montserrat';letter-spacing:.03em}
+form input,form textarea,form select{width:100%;font:inherit;padding:13px 14px;border:1.5px solid var(--ligne);border-radius:12px;margin-top:6px;background:var(--creme)}
+form input:focus,form textarea:focus,form select:focus{outline:2px solid var(--rose);border-color:var(--rose)}
+.ok{display:none;background:#E9F8EF;color:#14532D;border-radius:12px;padding:12px 14px;font-size:14px}
+/* pied */
+footer{background:var(--encre);color:#EBDDE0;padding:64px 0 28px;font-size:14px}
+.f-grille{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:36px}
+footer h4{font-family:'Montserrat';color:#fff;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:var(--rose)}
+.reseaux{display:flex;gap:10px;margin-top:18px}
+.reseaux a{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.1);font-size:20px;transition:.2s}
+.reseaux a:hover{background:var(--rose);color:#fff}
+.bas{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#B9A9AD;font-size:13px}
+/* mobile */
+@media (max-width:1020px){.grille-m{grid-template-columns:repeat(3,1fr)}.grille-p{grid-template-columns:repeat(3,1fr)}.familles{grid-template-columns:repeat(2,1fr)}.f-grille{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){
+ .nav{height:62px} .nav .logo img{height:34px}
+ .nav ul{display:none;position:absolute;top:62px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 20px 18px;border-bottom:1px solid var(--ligne)}
+ .nav ul.ouvert{display:flex} .nav ul a{display:block;padding:14px 0;border-bottom:1px solid var(--ligne)}
+ .nav .btn{display:none} .burger{display:block}
+ .hero-img{position:relative;height:320px;width:100%}
+ .hero-img img{object-position:60% 30%}
+ .hero-img::after{background:linear-gradient(0deg,rgba(255,248,246,1) 0%,rgba(255,248,246,0) 40%)}
+ .hero-in{min-height:0;padding:8px 0 48px}
+ .hero p.lead{font-size:17px}
+ section{padding:64px 0}
+ .grille-m{grid-template-columns:1fr 1fr;gap:12px} .marque:last-child{grid-column:span 2} .marque:last-child .m-img{aspect-ratio:16/9} .marque:last-child .m-img img{object-fit:contain}
+ .m-txt{padding:12px 12px 16px} .m-txt h3{font-size:14px} .acc{font-size:13px} .ligne{display:none}
+ .grille-p{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:10px;margin-inline:-20px;padding-inline:20px}
+ .prod{flex:0 0 62%;scroll-snap-align:start}
+ .familles{grid-template-columns:1fr 1fr;gap:10px} .fam{padding:12px;flex-direction:column;text-align:center}
+ .grille-a,.duo,.contact .in{grid-template-columns:1fr} .contact .in{gap:32px}
+ .f-grille{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.ruban span{animation:none;padding-left:20px}}
+</style>
+</head>
+<body>
+<div class="maquette">Maquette de proposition · page non publiée par Dream Cosmetics</div>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#"><img src="assets/logo.png" alt="Dream Cosmetics"></a>
+  <ul id="menu">
+   <li><a href="#marques">Nos marques</a></li>
+   <li><a href="#produits">Produits</a></li>
+   <li><a href="#acheter">Où acheter</a></li>
+   <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn" href="#acheter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Où acheter</a>
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('ouvert')"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+ </div>
+</header>
+
+<section class="hero" style="padding:0">
+ <div class="hero-img"><img src="assets/hero_dbd.jpg" alt="Une mère et son enfant, campagne Day by Day"></div>
+ <div class="wrap"><div class="hero-in">
+  <span class="sur">Dream Cosmetics · Abidjan</span>
+  <h1>Day by Day<b>votre rendez-vous quotidien</b></h1>
+  <p class="lead">Une gamme généreuse de soins hydratants pour une peau douce au quotidien.</p>
+  <div class="cta"><a class="btn" href="#marques">Découvrir nos marques <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn ligne" href="#acheter">Où acheter</a></div>
+ </div></div>
+</section>
+
+<div class="ruban" aria-hidden="true"><span>Day by Day · Paw Paw · Cocopulp · Dermaskin · Biolight · Clear Therapy · Babymed · Dreamy · Sign · Slam · I Love · Day by Day · Paw Paw · Cocopulp · Dermaskin · Biolight · Clear Therapy · Babymed · Dreamy · Sign · Slam · I Love</span></div>
+
+<section id="marques">
+ <div class="wrap">
+  <div class="tete">
+   <h2>Nos <b>marques</b></h2>
+   <div class="chips" data-cible="marque"><button class="chip on" data-f="tout">Tout</button><button class="chip" data-f="corps">Visage et corps</button><button class="chip" data-f="bebe">Bébé et enfants</button><button class="chip" data-f="homme">Homme</button><button class="chip" data-f="parfum">Parfums</button></div>
+  </div>
+  <div class="grille-m"><article class="marque" data-fam="corps">
+  <div class="m-img"><img src="assets/dbd.jpg" alt="Day by Day" loading="lazy"></div>
+  <div class="m-txt"><h3>Day by Day</h3><p class="acc">votre rendez-vous quotidien</p><p class="ligne">Une gamme généreuse de soins hydratants pour une peau douce au quotidien</p></div>
+</article>
+<article class="marque" data-fam="corps">
+  <div class="m-img"><img src="assets/women.jpg" alt="Day by Day Women" loading="lazy"></div>
+  <div class="m-txt"><h3>Day by Day Women</h3><p class="acc">« je prends du temps pour moi »</p><p class="ligne">Soins experts hydratants</p></div>
+</article>
+<article class="marque" data-fam="homme">
+  <div class="m-img"><img src="assets/men.jpg" alt="Day by Day Men" loading="lazy"></div>
+  <div class="m-txt"><h3>Day by Day Men</h3><p class="acc">Efficace et rapide,</p><p class="ligne">la routine beauté au masculin</p></div>
+</article>
+<article class="marque" data-fam="bebe">
+  <div class="m-img"><img src="assets/baby.jpg" alt="Day by Day Baby" loading="lazy"></div>
+  <div class="m-txt"><h3>Day by Day Baby</h3><p class="acc">me protège comme maman</p><p class="ligne">Nourrit, hydrate et parfume</p></div>
+</article>
+<article class="marque" data-fam="bebe">
+  <div class="m-img"><img src="assets/kids.jpg" alt="Day by Day Kids" loading="lazy"></div>
+  <div class="m-txt"><h3>Day by Day Kids</h3><p class="acc">aide les enfants à devenir grands</p><p class="ligne">Nettoie, hydrate et protège</p></div>
+</article>
+<article class="marque" data-fam="corps">
+  <div class="m-img"><img src="assets/pawpaw.jpg" alt="Paw Paw" loading="lazy"></div>
+  <div class="m-txt"><h3>Paw Paw</h3><p class="acc">bien dans sa peau, bien dans sa tête</p><p class="ligne">Soins lumière à la papaye</p></div>
+</article>
+<article class="marque" data-fam="corps">
+  <div class="m-img"><img src="assets/cocopulp.jpg" alt="Cocopulp" loading="lazy"></div>
+  <div class="m-txt"><h3>Cocopulp</h3><p class="acc">un rêve de crème</p><p class="ligne">Des soins au parfum de soleil</p></div>
+</article>
+<article class="marque" data-fam="corps">
+  <div class="m-img"><img src="assets/dermaskin.jpg" alt="Dermaskin" loading="lazy"></div>
+  <div class="m-txt"><h3>Dermaskin</h3><p class="acc">la douceur absolue</p><p class="ligne">L’hydratation optimale pour une peau apaisée et confortable</p></div>
+</article>
+<article class="marque" data-fam="corps">
+  <div class="m-img"><img src="assets/biolight.jpg" alt="Biolight" loading="lazy"></div>
+  <div class="m-txt"><h3>Biolight</h3><p class="acc">l’éclat et la fraîcheur</p><p class="ligne">Une action antioxydante qui entretient la fraîcheur du teint</p></div>
+</article>
+<article class="marque" data-fam="corps">
+  <div class="m-img"><img src="assets/cleartherapy.jpg" alt="Clear Therapy" loading="lazy"></div>
+  <div class="m-txt"><h3>Clear Therapy</h3><p class="acc">créateur de lumière</p><p class="ligne">Thérapie unifiante et détoxifiante</p></div>
+</article>
+<article class="marque" data-fam="bebe">
+  <div class="m-img"><img src="assets/babymed.jpg" alt="Babymed" loading="lazy"></div>
+  <div class="m-txt"><h3>Babymed</h3><p class="acc">son premier soin expert</p><p class="ligne">Le rituel de soins idéal pour une toilette tout en douceur</p></div>
+</article>
+<article class="marque" data-fam="parfum">
+  <div class="m-img"><img src="assets/dreamy.jpg" alt="Dreamy" loading="lazy"></div>
+  <div class="m-txt"><h3>Dreamy</h3><p class="acc">laissez-vous rêver</p><p class="ligne">Des brumes de parfum intenses comme une caresse amoureuse</p></div>
+</article>
+<article class="marque" data-fam="parfum">
+  <div class="m-img"><img src="assets/sign.jpg" alt="Sign" loading="lazy"></div>
+  <div class="m-txt"><h3>Sign</h3><p class="acc">un parfum telle une signature</p><p class="ligne">Une empreinte olfactive puissante qui dévoile votre histoire</p></div>
+</article>
+<article class="marque" data-fam="parfum">
+  <div class="m-img"><img src="assets/slam.jpg" alt="Slam" loading="lazy"></div>
+  <div class="m-txt"><h3>Slam</h3><p class="acc">choisis ta couleur</p><p class="ligne">Une gamme unisexe qui bouscule les codes en osant la différence</p></div>
+</article>
+<article class="marque" data-fam="parfum">
+  <div class="m-img"><img src="assets/ilove.jpg" alt="I Love" loading="lazy"></div>
+  <div class="m-txt"><h3>I Love</h3><p class="acc">Abidjan, Dakar, Dubaï, New York…</p><p class="ligne">Des eaux de parfum aux couleurs des grandes villes</p></div>
+</article></div>
+  <div class="familles">
+   <div class="fam"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></i><div><b>Visage et corps</b><span>Laits, crèmes, huiles, gels douche</span></div></div>
+   <div class="fam"><i><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9.3" cy="11" r="1" fill="currentColor"/><circle cx="14.7" cy="11" r="1" fill="currentColor"/><path d="M9.5 15c1.4 1.2 3.6 1.2 5 0M12 3.5c-1 1.6-.4 3 1 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></i><div><b>Bébé et enfants</b><span>Day by Day Baby, Kids, Babymed</span></div></div>
+   <div class="fam"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15zm0 0 7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></i><div><b>Homme</b><span>Day by Day Men et Men Sport</span></div></div>
+   <div class="fam"><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="9" width="10" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9V6h4v3M14 6h3M19 4l1-1M19 7h1.5M19 2.5 20 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></i><div><b>Parfums</b><span>Dreamy, Sign, Slam, I Love</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="produits" id="produits">
+ <div class="wrap">
+  <div class="tete">
+   <h2>Produits <b>phares</b></h2>
+   <div class="chips" data-cible="prod"><button class="chip on" data-f="tout">Tout</button><button class="chip" data-f="corps">Visage et corps</button><button class="chip" data-f="bebe">Bébé et enfants</button><button class="chip" data-f="homme">Homme</button><button class="chip" data-f="parfum">Parfums</button></div>
+  </div>
+  <div class="grille-p"><article class="prod" data-fam="corps">
+  <div class="p-img"><img src="assets/p179.webp" alt="Day by Day – Lait aloe vera &amp; glycérine" loading="lazy"></div>
+  <p class="p-marque">Day by Day</p><h3>Lait aloe vera &amp; glycérine</h3>
+</article>
+<article class="prod" data-fam="corps">
+  <div class="p-img"><img src="assets/p172.webp" alt="Day by Day – Crème hydratante amande douce &amp; glycérine" loading="lazy"></div>
+  <p class="p-marque">Day by Day</p><h3>Crème hydratante amande douce &amp; glycérine</h3>
+</article>
+<article class="prod" data-fam="corps">
+  <div class="p-img"><img src="assets/p306.webp" alt="Day by Day – Gel douche Rose divine" loading="lazy"></div>
+  <p class="p-marque">Day by Day</p><h3>Gel douche Rose divine</h3>
+</article>
+<article class="prod" data-fam="corps">
+  <div class="p-img"><img src="assets/p527.webp" alt="Day by Day Women – Lait nourrissant karité &amp; collagène" loading="lazy"></div>
+  <p class="p-marque">Day by Day Women</p><h3>Lait nourrissant karité &amp; collagène</h3>
+</article>
+<article class="prod" data-fam="homme">
+  <div class="p-img"><img src="assets/p122.webp" alt="Day by Day Men – Crème Perfect Day" loading="lazy"></div>
+  <p class="p-marque">Day by Day Men</p><h3>Crème Perfect Day</h3>
+</article>
+<article class="prod" data-fam="bebe">
+  <div class="p-img"><img src="assets/p545.webp" alt="Day by Day Baby – Lait hydratant amande douce &amp; pépins de raisin" loading="lazy"></div>
+  <p class="p-marque">Day by Day Baby</p><h3>Lait hydratant amande douce &amp; pépins de raisin</h3>
+</article>
+<article class="prod" data-fam="bebe">
+  <div class="p-img"><img src="assets/p552.webp" alt="Day by Day Kids – Lait hydratant avocat &amp; provitamine B5" loading="lazy"></div>
+  <p class="p-marque">Day by Day Kids</p><h3>Lait hydratant avocat &amp; provitamine B5</h3>
+</article>
+<article class="prod" data-fam="bebe">
+  <div class="p-img"><img src="assets/p600.webp" alt="Day by Day Baby – Pommade nourrissante" loading="lazy"></div>
+  <p class="p-marque">Day by Day Baby</p><h3>Pommade nourrissante</h3>
+</article>
+<article class="prod" data-fam="bebe">
+  <div class="p-img"><img src="assets/p155.webp" alt="Babymed – Lait de toilette" loading="lazy"></div>
+  <p class="p-marque">Babymed</p><h3>Lait de toilette</h3>
+</article>
+<article class="prod" data-fam="corps">
+  <div class="p-img"><img src="assets/p427.webp" alt="Paw Paw – Lait aux extraits de papaye" loading="lazy"></div>
+  <p class="p-marque">Paw Paw</p><h3>Lait aux extraits de papaye</h3>
+</article>
+<article class="prod" data-fam="corps">
+  <div class="p-img"><img src="assets/p97.webp" alt="Dermaskin – Lait visage et mains, vitamine C" loading="lazy"></div>
+  <p class="p-marque">Dermaskin</p><h3>Lait visage et mains, vitamine C</h3>
+</article>
+<article class="prod" data-fam="parfum">
+  <div class="p-img"><img src="assets/p665.webp" alt="Dreamy – Brume de parfum" loading="lazy"></div>
+  <p class="p-marque">Dreamy</p><h3>Brume de parfum</h3>
+</article>
+<article class="prod" data-fam="parfum">
+  <div class="p-img"><img src="assets/p650.webp" alt="Slam – Eau de parfum" loading="lazy"></div>
+  <p class="p-marque">Slam</p><h3>Eau de parfum</h3>
+</article>
+<article class="prod" data-fam="parfum">
+  <div class="p-img"><img src="assets/p656.webp" alt="Sign – Parfum concentré" loading="lazy"></div>
+  <p class="p-marque">Sign</p><h3>Parfum concentré</h3>
+</article>
+<article class="prod" data-fam="parfum">
+  <div class="p-img"><img src="assets/p460.webp" alt="I Love – Eau de parfum I Love Abidjan" loading="lazy"></div>
+  <p class="p-marque">I Love</p><h3>Eau de parfum I Love Abidjan</h3>
+</article></div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap duo">
+  <div class="bandeau"><img src="assets/hero_women.jpg" alt="Campagne Day by Day Women" loading="lazy"></div>
+  <div class="bandeau"><img src="assets/hero_pawpaw.jpg" alt="Campagne Paw Paw" loading="lazy"></div>
+ </div>
+</section>
+
+<section id="acheter" style="padding-top:0">
+ <div class="wrap">
+  <div class="tete"><h2>Où <b>acheter</b></h2><p>Nos produits sont disponibles chez nos revendeurs, en boutique et en ligne.</p></div>
+  <div class="grille-a">
+   <div class="achat vide"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5 5.5 4h13L20 9.5M4 9.5h16M4 9.5a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0M5.5 12v8h13v-8M10 20v-4.5h4V20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></i><h3>En Côte d'Ivoire</h3><p>Liste des points de vente et distributeurs à compléter par Dream Cosmetics.</p><a class="lien" href="#contact">Devenir revendeur <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+   <div class="achat"><i><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></i><h3>En ligne, en Europe</h3><p>Lady Edna propose une sélection de nos soins.</p><a class="lien" href="https://www.ladyedna.com/fr/brand/79-dream-cosmetics-abidjan" target="_blank" rel="noopener">Voir sur ladyedna.com <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+   <div class="achat"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></i><h3>En ligne, aux États-Unis</h3><p>Beto Cosmetics référence plusieurs de nos gammes.</p><a class="lien" href="https://betocosmetics.com/collections/dream-cosmetics" target="_blank" rel="noopener">Voir sur betocosmetics.com <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap in">
+  <div>
+   <h2>Parlons <b>ensemble</b></h2>
+   <div class="co">
+    <a href="mailto:mail@dreamcosmetics.net"><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></i>mail@dreamcosmetics.net</a>
+    <div><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V10l5 3V10l5 3V6h3l1 14zM3 20h18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></i>Zone industrielle de Yopougon, Abidjan</div>
+    <div><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.3A7 7 0 0 1 19 9.7C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.7" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></i>23 BP 4757 Abidjan 23, Côte d'Ivoire</div>
+   </div>
+   <div class="reseaux">
+    <a href="https://www.instagram.com/dreamcosmetics_beauty/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></svg></a>
+    <a href="https://www.facebook.com/dreamcosmetics.net" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2V2.6h-2.8C11.1 2.6 10.5 4.9 10.5 6.4v2.1H8v3.3h2.5V21.4H14v-9.6h2.7l.4-3.3z" fill="currentColor"/></svg></a>
+   </div>
+  </div>
+  <form id="f" onsubmit="return envoyer(event)">
+   <div><label>Nom<input name="nom" required autocomplete="name"></label></div>
+   <div><label>Téléphone<input name="tel" type="tel" autocomplete="tel"></label></div>
+   <div><label>Votre demande<select name="objet"><option>Une question sur un produit</option><option>Devenir revendeur</option><option>Partenariat</option><option>Autre</option></select></label></div>
+   <div><label>Message<textarea name="msg" rows="4" required></textarea></label></div>
+   <button class="btn" type="submit">Envoyer <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+   <p class="ok" id="ok">Merci, votre messagerie s'ouvre avec votre message prêt à partir vers mail@dreamcosmetics.net.</p>
+  </form>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <div class="f-grille">
+   <div><img src="assets/logo_blanc.png" alt="Dream Cosmetics" style="height:40px;width:auto"><p style="margin-top:16px;max-width:280px">Fabricant de cosmétiques, zone industrielle de Yopougon, Abidjan.</p>
+    <div class="reseaux"><a href="https://www.instagram.com/dreamcosmetics_beauty/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></svg></a><a href="https://www.facebook.com/dreamcosmetics.net" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2V2.6h-2.8C11.1 2.6 10.5 4.9 10.5 6.4v2.1H8v3.3h2.5V21.4H14v-9.6h2.7l.4-3.3z" fill="currentColor"/></svg></a></div></div>
+   <div><h4>Soins</h4><ul><li>Day by Day</li><li>Day by Day Women</li><li>Day by Day Men</li><li>Paw Paw</li><li>Cocopulp</li><li>Dermaskin</li><li>Biolight</li><li>Clear Therapy</li></ul></div>
+   <div><h4>Bébé et parfums</h4><ul><li>Day by Day Baby</li><li>Day by Day Kids</li><li>Babymed</li><li>Dreamy</li><li>Sign</li><li>Slam</li><li>I Love</li></ul></div>
+   <div><h4>Contact</h4><ul><li><a href="mailto:mail@dreamcosmetics.net">mail@dreamcosmetics.net</a></li><li>Zone industrielle de Yopougon</li><li>23 BP 4757 Abidjan 23</li><li><a href="#acheter">Où acheter</a></li></ul></div>
+  </div>
+  <div class="bas"><span>© 2026 Dream Cosmetics</span><span>Mentions légales</span></div>
+ </div>
+</footer>
+<script>
+document.querySelectorAll('.chips').forEach(function(g){
+ var cible=g.dataset.cible;
+ g.querySelectorAll('.chip').forEach(function(b){
+  b.onclick=function(){
+   g.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+   document.querySelectorAll('.'+cible).forEach(function(c){c.classList.toggle('cache', b.dataset.f!=='tout' && c.dataset.fam!==b.dataset.f)});
+  };
+ });
+});
+document.querySelectorAll('#menu a').forEach(function(a){a.onclick=function(){document.getElementById('menu').classList.remove('ouvert')}});
+function envoyer(e){
+ e.preventDefault(); var f=e.target;
+ var corps='Nom : '+f.nom.value+'\nTéléphone : '+f.tel.value+'\n\n'+f.msg.value;
+ document.getElementById('ok').style.display='block';
+ window.location.href='mailto:mail@dreamcosmetics.net?subject='+encodeURIComponent(f.objet.value)+'&body='+encodeURIComponent(corps);
+ return false;
+}
+</script>
+</body>
+</html>
