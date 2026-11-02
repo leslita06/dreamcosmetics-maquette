@@ -1,2 +1,3 @@
 # dreamcosmetics-maquette
-Maquette de page d accueil - proposition, non publiée par la marque
+Maquette de site pour Dream Cosmetics, proposition non publiée par la marque.
+Version unique : /premium/ (la racine y redirige).
